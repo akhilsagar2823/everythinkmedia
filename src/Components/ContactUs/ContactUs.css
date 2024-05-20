@@ -1,0 +1,109 @@
+.contactUs-Section{
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    padding-top: 140px;
+}
+.form-section{
+    width: 50%;
+}
+.Input-form{
+    width: 100%;
+    color: white;
+    padding: .5rem; 
+    border: 2px solid rgb(100, 119, 136);
+    border-radius: 0 1.3rem 1.3rem 1.3rem;
+    background-color: rgb(100, 119, 136);
+    outline: none;
+    font-weight: 600;
+}
+.Input-form::placeholder{
+    color: rgb(77, 75, 75);
+    font-weight: 600;
+}
+.Input-form2{
+    width: 100%;
+    outline: none;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 119, 136);
+    background-color: rgb(100, 119, 136);
+    border-radius: 0 2.3rem 2.3rem;
+    color: white;
+    font-weight: 600;
+}
+.Input-form2::placeholder{
+    color: rgb(77, 75, 75);
+    font-weight: 600;
+}
+.labelText{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.contactus-submit{
+    width: 100%;
+    padding: 0.8rem 0;
+    background-color: rgb(14, 128, 234);
+    border: 2px solid rgb(14, 128, 234);
+    border-radius: 0 2.3rem 2.3rem;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.contactus-submit:hover{
+    width: 100%;
+    padding: 0.8rem 0;
+    background-color: rgb(6, 99, 185);
+    border: 2px solid rgb(6, 99, 185);
+    border-radius: 0 2.3rem 2.3rem;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.Text-section{
+    width: 45%;
+    padding-left: 5rem;
+}
+.Text-section-Heading{
+    font-size: 60px;
+}
+.Text-section-text{
+    width: 70%;
+}
+.Text-section-email{
+    text-decoration: none;
+    color: white;
+}
+.Text-section-email:hover{
+    text-decoration: none;
+    color: rgb(14, 128, 234);
+    text-shadow: white 2px 2px 10px;
+}
+
+@media (max-width: 992px){
+    .contactUs-Section{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .form-section{
+        width: 100%;
+    }
+    .Text-section{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .Text-section-Heading{
+        font-size: 40px;
+    }
+    .Text-section-text{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    .labelText{
+        font-size: 3vw;
+    }
+}

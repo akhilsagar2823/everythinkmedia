@@ -1,0 +1,68 @@
+.OurTeam-Heading{
+    margin: 0 auto;
+    padding: 8vh 0 4vh;
+    text-align: center;
+    font-size: 8vw;
+}
+.OurTeam-Container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.OurTeam-Box{
+    width: 22%;
+    text-align: center;
+}
+.OurTeamImage{
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(107, 105, 105);
+    border-radius: 2rem;
+}
+.OurteamImg{
+    width: 100%;
+    height: 100%;
+}
+.OurTeamRole{
+    color: rgb(14, 128, 234);
+    font-size: 2vw;
+    padding: 20px 0;
+}
+.OurTeamName{
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 992px){
+
+    .OurTeam-Box{
+        width: 30%;
+    }
+
+}
+@media screen and (max-width: 768){
+    .OurTeam-Box{
+        width: 49%;
+    }
+    .OurTeamImage{
+        height: 30vh;
+    } 
+}
+@media screen and (max-width: 430px){
+    .OurTeam-Heading{
+        font-size: 40px;
+    }
+    .OurTeam-Box{
+        width: 100%;
+        padding: 5vh 0;
+    }
+    .OurTeamImage{
+        height: 60vh;
+    }
+    .OurTeamRole{
+        font-size: 6vw;
+    }
+    .OurTeamName{
+        font-size: 4vw;
+    }
+}

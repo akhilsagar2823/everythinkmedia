@@ -1,0 +1,244 @@
+.ProjectBackground {
+    background-image: url('../Assets/Background1.png');
+}
+
+
+.Product-section {
+    margin: 0 auto;
+    padding: 10rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    /* Set width to 100% to ensure it occupies the full width of its parent */
+    max-width: 900px;
+    margin: 0 auto;
+    /* Center the container horizontally */
+    height: auto;
+}
+
+.iconSlider {
+    width: 100%;
+}
+
+.iconButton {
+    background: transparent;
+    border-radius: 50%;
+    border-color: transparent;
+}
+
+.sliderImg {
+    width: 100%;
+    border-radius: 50%;
+    opacity: 45%;
+    z-index: 0;
+    position: static;
+}
+
+.sliderImg-focused {
+    width: 120%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 252, 255, 1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255, 252, 255, 1);
+    box-shadow: 0px 0px 15px 0px rgba(255, 252, 255, 1);
+    opacity: 100%;
+    position: static;
+    z-index: 100%;
+}
+
+.Product-right {
+    width: 100%;
+}
+
+.product-left {
+    width: 100%;
+}
+
+.Content-slider {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.playButton-section {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2;
+}
+
+.ButtonandText {
+    /* background:   -webkit-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); */
+    background: rgb(94, 94, 139);
+    /* background-color: url(" http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=fcfcfc&density=4&opacity=54"); */
+    width: 30rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.playButton {
+    width: 50%;
+    padding: 5px 0 14px 20px;
+}
+
+.playButton-btn {
+    font-size: 40px;
+    color: rgb(14, 128, 234);
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.playButton-btn:hover {
+
+    color: rgb(6, 99, 185);
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.playButton-text {
+    /* margin-top: 5px; */
+    font-size: 20px;
+}
+
+.playButton-extraText {
+    margin-top: 0.4vh;
+    color: rgb(14, 128, 234);
+    width: 100%;
+    padding: 0 40px;
+    font-size: 15px;
+}
+
+.playButtonLink {
+    text-decoration: none;
+    color: rgb(14, 128, 234);
+}
+
+@media screen and (max-width: 1200px) {
+    .Product-right {
+        width: 100%;
+    }
+
+    .product-left {
+        width: 100%;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+
+    .Product-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Product-section {
+        grid-template-columns: 1fr;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+
+    .Product-right {
+        width: 100%;
+    }
+
+    .product-left {
+        width: 100%;
+    }
+    .ButtonandText{
+        width: 20rem;
+    }
+    .sliderImg {
+        width: 90%;
+        border-radius: 50%;
+        opacity: 45%;
+        z-index: 0;
+        position: static;
+    }
+
+    .playButton-section {
+        flex-direction: column;
+    }
+
+    .playButton-extraText {
+        margin: 3vh 0;
+        text-align: center;
+
+    }
+
+    .sliderImg-focused {
+        width: 100%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 252, 255, 1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(255, 252, 255, 1);
+        box-shadow: 0px 0px 15px 0px rgba(255, 252, 255, 1);
+        opacity: 100%;
+        position: static;
+        z-index: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .Product-section {
+        grid-template-columns: 1fr;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+
+    .Product-right {
+        width: 100%;
+    }
+
+    .product-left {
+        width: 100%;
+    }
+
+    .sliderImg {
+        width: 70%;
+        border-radius: 50%;
+        opacity: 45%;
+        z-index: 0;
+        position: static;
+    }
+
+    .Product-Content {
+        padding: 5vh 0;
+    }
+
+    .sliderImg-focused {
+        width: 80%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 252, 255, 1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(255, 252, 255, 1);
+        box-shadow: 0px 0px 15px 0px rgba(255, 252, 255, 1);
+        opacity: 100%;
+        position: static;
+        z-index: 100%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .Product-section {
+        padding: 5vh 0;
+    }
+
+    .iconSlider {
+        padding: 5vh 0;
+    }
+
+}

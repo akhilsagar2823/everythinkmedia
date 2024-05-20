@@ -1,3 +1,4 @@
+# Before npm start you need to run :=> "npm i" to install node modules and dependencies or librariry which is used to create this project (Akhil)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

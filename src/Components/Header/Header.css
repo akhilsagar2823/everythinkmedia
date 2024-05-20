@@ -1,0 +1,59 @@
+.Header{
+    width: 100%;
+    background-image: url('../Assets/Background1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    list-style: none;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0!important;
+}
+.Header-item{
+    font-size: 20px;
+
+}
+.Header-item-Link{
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.Header-item-Link:hover{
+    color: rgb(14, 128, 234);  
+    text-shadow: white 2px 2px 10px;
+    font-weight: bold;
+}
+.Header-item-Link:focus{
+    text-decoration: none;
+    color: rgb(14, 128, 234);  
+    text-shadow: white 2px 2px 10px;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.Header-item-Link-focused{
+    text-decoration: none;
+    color: rgb(14, 128, 234);  
+    text-shadow: white 2px 2px 10px;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media screen and (max-width: 640px){
+    .Header-content{
+        padding: 1vh 1vw;
+    }
+    .Header-item{
+        font-size: 3vw;
+    
+    }
+}

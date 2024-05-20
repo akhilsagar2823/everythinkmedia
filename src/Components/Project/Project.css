@@ -1,0 +1,84 @@
+.Desc-Container{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ThumbnailImage-Section{
+    width: 65%;
+}
+.Desc-Image{
+    width: 100%;
+}
+.ThumbnailImg{
+    width: 100%;
+}
+.Thumbnail-Info{
+    margin-top: 10px;
+    padding: 10px 10px 0;
+    width: 70%;
+    background-color: rgb(28, 28, 59);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Desc-Section{
+    width: 30%;
+}
+.DecHeading{
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+.Desc-Description{
+    margin: 30px 0;
+    font-size: 18px;
+}
+
+.BrandingLogo-Container{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.BrandingImage-section{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.BrandingImage1{
+    width: 43.3%;
+}
+.BrandingImage2{
+    width: 56.3%;
+}
+@media screen and (max-width: 992px) {
+    .Desc-Container{
+        flex-direction: column;
+    }
+    .ThumbnailImage-Section{
+        width: 100%;
+    }
+    .Thumbnail-Info{
+        margin-top: 10px;
+        padding: 10px 10px 0;
+        width: 100%;
+        background-color: rgb(28, 28, 59);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Desc-Section{
+        width: 100%;
+        padding: 5vh 0;
+        text-align: center;
+    }
+    .BrandingLogo-Container{
+        flex-direction: column;
+    }
+    .BrandingImage-section{
+        width: 100%;
+    }
+}
