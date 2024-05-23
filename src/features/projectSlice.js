@@ -1,18 +1,18 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-export const teamApi = createApi({
-  reducerPath: 'teamApi',
+export const projectApi = createApi({
+  reducerPath: 'projectApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:8080/api/v1/",
+    baseUrl: "http://localhost:3000/api/v1/cms/",
   }),
   endpoints: (builder) => ({
-    getTeam: builder.query({
-      query: () => "team",
+    getProject: builder.query({
+      query: () => "project",
     }),
   }),
 });
 
-export const { useGetTeamQuery } = teamApi;
+export const { useGetProjectQuery } = projectApi;
 
-// export const { useGetTeamQuery } = teamApi;
-// export const { useGetTeamQuery } = teamApi;
+// export const { useGetprojectQuery } = projectApi;
+// export const { useGetprojectQuery } = projectApi;

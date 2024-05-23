@@ -4,6 +4,7 @@ import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import { HiMail } from "react-icons/hi";
 import useWindowWidrh from '../hooks/useWindowWidrh';
+import { useAddContactMutation } from '../../features/contactSlice';
 export const ContactUs = () => {
   const [inputValue, setInputValue] = useState({
     name: "",
@@ -13,15 +14,32 @@ export const ContactUs = () => {
     customerLink: "",
     lookingFor: "",
   })
+  
   const [submitedData, setSubmitedData] = useState({});
   const InputHandler = (e) => {
     setInputValue({ ...inputValue, [e.target.name]: e.target.value });
   }
+  
+  const [newContact] = useAddContactMutation();
+
   const windowWidth = useWindowWidrh();
-  const submitData = (e) => {
+  const submitData = async(e) => {
     e.preventDefault();
     setSubmitedData(inputValue);
 
+    let newContactObj = {
+      name : inputValue.name,
+      organization_name : inputValue.organizationName,
+      email : inputValue.email,
+      contact_no : inputValue.contact,
+      description : inputValue.lookingFor,
+    }
+    try{
+      await newContact(newContactObj);
+    }
+    catch(e){
+      console.log(e);
+    }
     setInputValue({
       name: "",
       organizationName: "",
