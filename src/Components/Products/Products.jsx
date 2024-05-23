@@ -30,6 +30,24 @@ export const Products = () => {
       sliderImage: GraphicImage,
       heading: "Digital Marketing",
       content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas explicabo optio aperiam ad in vitae quos, harum asperiores fugiat alias illo saepe quibusdam maiores qui. Ullam saepe eveniet laudantium?`
+    },
+    {
+      id: 4,
+      sliderImage: GraphicImage,
+      heading: "Graphic Designing",
+      content: `From pixel to perfection, our design wizards will turn your ideas into visual wonders. Get ready to wow the world with eye-catching graphics that steal the spotlight.`
+    },
+    {
+      id: 5,
+      sliderImage: GraphicImage,
+      heading: "Content Writing",
+      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas explicabo optio aperiam ad in vitae quos, harum asperiores fugiat alias illo saepe quibusdam maiores qui. Ullam saepe eveniet laudantium?`
+    },
+    {
+      id: 6,
+      sliderImage: GraphicImage,
+      heading: "Digital Marketing",
+      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas explicabo optio aperiam ad in vitae quos, harum asperiores fugiat alias illo saepe quibusdam maiores qui. Ullam saepe eveniet laudantium?`
     }
   ];
   const [pause, setPause] = useState(false);
