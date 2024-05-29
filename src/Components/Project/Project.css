@@ -43,16 +43,11 @@
 }
 .BrandingImage-section{
     width: 65%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .BrandingImage1{
-    width: 43.3%;
+    width: 100%;
 }
-.BrandingImage2{
-    width: 56.3%;
-}
+
 @media screen and (max-width: 992px) {
     .Desc-Container{
         flex-direction: column;
